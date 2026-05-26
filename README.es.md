@@ -1,4 +1,6 @@
-# Fluid Pro Engine
+# GENERATIVE LAB
+
+![intro](./images/README/intro2.webp)
 
 Aplicación moderna con React + Vite para visuales 3D en tiempo real usando three.js y @react-three/fiber.
 
