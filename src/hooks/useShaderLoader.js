@@ -1,11 +1,8 @@
 import { useMemo } from 'react';
-
-// Carga todos los shaders de la carpeta /shaders
-const shaderModules = import.meta.glob('../shaders/**/*.js', { eager: true });
-const discoveredShaders = Object.values(shaderModules);
+import { SHADER_REGISTRY } from '../shaders/registry';
 
 export function useShaderLoader() {
-  const shaders = useMemo(() => discoveredShaders, []);
+  const shaders = useMemo(() => SHADER_REGISTRY, []);
 
   const getShaderById = (id) => shaders.find((s) => s.config?.id === id);
 
