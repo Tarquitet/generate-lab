@@ -5,7 +5,8 @@ import './index.css'; // ← Estilos globales
 // import './App.css'; // ← Opcional: si aún lo usas
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // 🔥 COMENTADO TEMPORALMENTE para evitar la destrucción del contexto WebGL
+  //<React.StrictMode>
+  <App />,
+  //</React.StrictMode>,
 );

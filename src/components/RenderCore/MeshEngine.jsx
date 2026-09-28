@@ -16,7 +16,6 @@ export function MeshEngine({ activeShader, uniforms, materialRef }) {
       {geometry}
 
       <shaderMaterial
-        key={activeShader.config.id}
         ref={materialRef}
         vertexShader={MASTER_VERTEX_SHADER}
         fragmentShader={activeShader.fragmentShader}
